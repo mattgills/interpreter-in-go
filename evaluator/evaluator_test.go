@@ -185,7 +185,7 @@ func TestReturnStatements(t *testing.T) {
 	}
 }
 
-func TestError(t *testing.T) {
+func TestErrorHandling(t *testing.T) {
 	tests := []struct {
 		input           string
 		expectedMessage string
@@ -225,6 +225,10 @@ func TestError(t *testing.T) {
 			}
 			`,
 			"unknown operator: BOOLEAN + BOOLEAN",
+		},
+		{
+			"foobar",
+			"identifier not found: foobar",
 		},
 	}
 
