@@ -808,7 +808,7 @@ func TestParsingArrayLiterals(t *testing.T) {
 	testInfixExpression(t, array.Elements[2], 3, "+", 3)
 }
 
-func TestParsingINdexExpressions(t *testing.T) {
+func TestParsingIndexExpressions(t *testing.T) {
 	input := "myArray[1 + 1]"
 
 	l := lexer.New(input)
